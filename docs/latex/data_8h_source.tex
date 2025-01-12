@@ -1,0 +1,43 @@
+\hypertarget{data_8h_source}{}\doxysection{data.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}error.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classData}{Data}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{classData_adf49d8ff2ffee44b9f362acae33591b2}{Data}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&path\_to\_conf, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&path\_to\_in, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&path\_to\_out);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{34     array<string, 2> \mbox{\hyperlink{classData_a0645809c37fe97241df0389cdb4e3adb}{conf}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{42     vector<vector<float>> \mbox{\hyperlink{classData_a2584365d3c23e197f6800c3a6dbb16b7}{read}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{classData_a5a590d73853c4152b964246472aaffa2}{write}}(\textcolor{keyword}{const} vector<float> \&data);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{string} \mbox{\hyperlink{classData_afa9ed5aadef6313edd45013ac4739bd0}{getConfigPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{string} \mbox{\hyperlink{classData_ac979399883e15f32c49dec9fc84dcc19}{getInputPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{string} \mbox{\hyperlink{classData_a694390ffd8c26bb545290c39e82b7e6c}{getOutputPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{keyword}{private}:}
+\DoxyCodeLine{74     \textcolor{keywordtype}{string} path\_to\_conf; }
+\DoxyCodeLine{75     \textcolor{keywordtype}{string} path\_to\_in;   }
+\DoxyCodeLine{76     \textcolor{keywordtype}{string} path\_to\_out;  }
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{84 \textcolor{keywordtype}{void} printVector(\textcolor{keyword}{const} vector<float>\& vec); }
+\DoxyCodeLine{85 }
+\DoxyCodeLine{91 \textcolor{keywordtype}{void} printVectors(\textcolor{keyword}{const} vector<vector<float>>\& vectors);}
+
+\end{DoxyCode}

@@ -1,0 +1,147 @@
+\hypertarget{classClient}{}\doxysection{Класс Client}
+\label{classClient}\index{Client@{Client}}
+
+
+Класс для управления подключением и взаимодействием с сервером  
+
+
+
+
+{\ttfamily \#include $<$client.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClient_a66adc90d431a7a33a8ab3151d1075c6d}{Client}} (const string \&address, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classClient}{Client}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a9865ca34bb3892bf267a8e8e4a24781d}{conn}} ()
+\begin{DoxyCompactList}\small\item\em Установить соединение с сервером \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_ad715ab1466b33f6f2d50bf8a58f3abe4}{auth}} (const string \&username, const string \&password)
+\begin{DoxyCompactList}\small\item\em Аутентификация пользователя на сервере \end{DoxyCompactList}\item 
+vector$<$ float $>$ \mbox{\hyperlink{classClient_a706687d6fd1e7e75eb3b84cfabac1ae9}{calc}} (const vector$<$ vector$<$ float $>$ $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Выполнение расчетов на сервере \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClient_a2ac4838875e743af25125d8b5c8eba09}\label{classClient_a2ac4838875e743af25125d8b5c8eba09}} 
+void {\bfseries close} ()
+\begin{DoxyCompactList}\small\item\em Закрытие соединения с сервером \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classClient_afdf2c15b5ef6f4069786077717702a3f}{get\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Получить адрес сервера \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classClient_a75595f6310f4055351e1067fcd5e4aa5}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Получить порт сервера \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления подключением и взаимодействием с сервером 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classClient_a66adc90d431a7a33a8ab3151d1075c6d}\label{classClient_a66adc90d431a7a33a8ab3151d1075c6d}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{const string \&}]{address,  }\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classClient}{Client}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Адрес сервера \\
+\hline
+{\em port} & Порт сервера \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classClient_ad715ab1466b33f6f2d50bf8a58f3abe4}\label{classClient_ad715ab1466b33f6f2d50bf8a58f3abe4}} 
+\index{Client@{Client}!auth@{auth}}
+\index{auth@{auth}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily void Client\+::auth (\begin{DoxyParamCaption}\item[{const string \&}]{username,  }\item[{const string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Аутентификация пользователя на сервере 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя \\
+\hline
+{\em password} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classClientError}{Client\+Error}}} & Если аутентификация не удалась \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classClient_a706687d6fd1e7e75eb3b84cfabac1ae9}\label{classClient_a706687d6fd1e7e75eb3b84cfabac1ae9}} 
+\index{Client@{Client}!calc@{calc}}
+\index{calc@{calc}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily vector$<$ float $>$ Client\+::calc (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ float $>$ $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Выполнение расчетов на сервере 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Входные данные для расчетов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результаты расчетов 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classClientError}{Client\+Error}}} & Если выполнение расчетов не удалось \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classClient_a9865ca34bb3892bf267a8e8e4a24781d}\label{classClient_a9865ca34bb3892bf267a8e8e4a24781d}} 
+\index{Client@{Client}!conn@{conn}}
+\index{conn@{conn}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{conn()}{conn()}}
+{\footnotesize\ttfamily void Client\+::conn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Установить соединение с сервером 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classClientError}{Client\+Error}}} & Если не удается установить соединение \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classClient_afdf2c15b5ef6f4069786077717702a3f}\label{classClient_afdf2c15b5ef6f4069786077717702a3f}} 
+\index{Client@{Client}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily string Client\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить адрес сервера 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_a75595f6310f4055351e1067fcd5e4aa5}\label{classClient_a75595f6310f4055351e1067fcd5e4aa5}} 
+\index{Client@{Client}!getPort@{getPort}}
+\index{getPort@{getPort}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily uint16\+\_\+t Client\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить порт сервера 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+client.\+h\item 
+client.\+cpp\end{DoxyCompactItemize}

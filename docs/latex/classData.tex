@@ -1,0 +1,157 @@
+\hypertarget{classData}{}\doxysection{Класс Data}
+\label{classData}\index{Data@{Data}}
+
+
+Класс для управления конфигурационными данными и данными для расчетов  
+
+
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classData_adf49d8ff2ffee44b9f362acae33591b2}{Data}} (const string \&path\+\_\+to\+\_\+conf, const string \&path\+\_\+to\+\_\+in, const string \&path\+\_\+to\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classData}{Data}}. \end{DoxyCompactList}\item 
+array$<$ string, 2 $>$ \mbox{\hyperlink{classData_a0645809c37fe97241df0389cdb4e3adb}{conf}} ()
+\begin{DoxyCompactList}\small\item\em Чтение конфигурационных данных \end{DoxyCompactList}\item 
+vector$<$ vector$<$ float $>$ $>$ \mbox{\hyperlink{classData_a2584365d3c23e197f6800c3a6dbb16b7}{read}} ()
+\begin{DoxyCompactList}\small\item\em Чтение входных данных \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classData_a5a590d73853c4152b964246472aaffa2}{write}} (const vector$<$ float $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Запись выходных данных \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classData_afa9ed5aadef6313edd45013ac4739bd0}{get\+Config\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Получить путь к файлу конфигурации \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classData_ac979399883e15f32c49dec9fc84dcc19}{get\+Input\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Получить путь к входному файлу данных \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classData_a694390ffd8c26bb545290c39e82b7e6c}{get\+Output\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Получить путь к выходному файлу данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления конфигурационными данными и данными для расчетов 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classData_adf49d8ff2ffee44b9f362acae33591b2}\label{classData_adf49d8ff2ffee44b9f362acae33591b2}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{const string \&}]{path\+\_\+to\+\_\+conf,  }\item[{const string \&}]{path\+\_\+to\+\_\+in,  }\item[{const string \&}]{path\+\_\+to\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classData}{Data}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+\_\+to\+\_\+conf} & Путь к файлу конфигурации \\
+\hline
+{\em path\+\_\+to\+\_\+in} & Путь к входному файлу данных \\
+\hline
+{\em path\+\_\+to\+\_\+out} & Путь к выходному файлу данных \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classData_a0645809c37fe97241df0389cdb4e3adb}\label{classData_a0645809c37fe97241df0389cdb4e3adb}} 
+\index{Data@{Data}!conf@{conf}}
+\index{conf@{conf}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{conf()}{conf()}}
+{\footnotesize\ttfamily array$<$ string, 2 $>$ Data\+::conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Чтение конфигурационных данных 
+
+\begin{DoxyReturn}{Возвращает}
+Пара логин и пароль 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classClientError}{Client\+Error}}} & Если не удается прочитать конфигурационный файл \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classData_afa9ed5aadef6313edd45013ac4739bd0}\label{classData_afa9ed5aadef6313edd45013ac4739bd0}} 
+\index{Data@{Data}!getConfigPath@{getConfigPath}}
+\index{getConfigPath@{getConfigPath}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getConfigPath()}{getConfigPath()}}
+{\footnotesize\ttfamily string Data\+::get\+Config\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить путь к файлу конфигурации 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classData_ac979399883e15f32c49dec9fc84dcc19}\label{classData_ac979399883e15f32c49dec9fc84dcc19}} 
+\index{Data@{Data}!getInputPath@{getInputPath}}
+\index{getInputPath@{getInputPath}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getInputPath()}{getInputPath()}}
+{\footnotesize\ttfamily string Data\+::get\+Input\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить путь к входному файлу данных 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу данных 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classData_a694390ffd8c26bb545290c39e82b7e6c}\label{classData_a694390ffd8c26bb545290c39e82b7e6c}} 
+\index{Data@{Data}!getOutputPath@{getOutputPath}}
+\index{getOutputPath@{getOutputPath}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getOutputPath()}{getOutputPath()}}
+{\footnotesize\ttfamily string Data\+::get\+Output\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить путь к выходному файлу данных 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу данных 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classData_a2584365d3c23e197f6800c3a6dbb16b7}\label{classData_a2584365d3c23e197f6800c3a6dbb16b7}} 
+\index{Data@{Data}!read@{read}}
+\index{read@{read}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ float $>$ $>$ Data\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Чтение входных данных 
+
+\begin{DoxyReturn}{Возвращает}
+Входные данные для расчетов 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classClientError}{Client\+Error}}} & Если не удается прочитать входной файл \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classData_a5a590d73853c4152b964246472aaffa2}\label{classData_a5a590d73853c4152b964246472aaffa2}} 
+\index{Data@{Data}!write@{write}}
+\index{write@{write}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Data\+::write (\begin{DoxyParamCaption}\item[{const vector$<$ float $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Запись выходных данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Данные для записи \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classClientError}{Client\+Error}}} & Если не удается записать в выходной файл \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+data.\+h\item 
+data.\+cpp\end{DoxyCompactItemize}

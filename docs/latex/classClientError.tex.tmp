@@ -1,0 +1,113 @@
+\hypertarget{classClientError}{}\doxysection{Класс Client\+Error}
+\label{classClientError}\index{ClientError@{ClientError}}
+
+
+Класс исключений для работы с клиентом  
+
+
+
+
+{\ttfamily \#include $<$error.\+h$>$}
+
+
+
+Граф наследования\+:Client\+Error\+:
+% FIG 0
+
+
+Граф связей класса Client\+Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClientError_a1137908ebb632a77ef5fa996df7a78a2}{Client\+Error}} (const string \&error\+Name, const string \&\mbox{\hyperlink{classClientError_a79bdc3ff320094e91cefa9da21b58284}{func}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classClientError}{Client\+Error}}. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classClientError_afdda53e6bede89fd4d9fa458f2489860}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Получить сообщение об ошибке \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classClientError_ac451d92271a6d5a206af954fb1361b33}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получить имя ошибки \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classClientError_a6e1909a493ef6b13f77a047877f329e9}{get\+Func}} () const
+\begin{DoxyCompactList}\small\item\em Получить имя функции, в которой возникла ошибка \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classClientError_aad700c61d6fa468442caa4b1f717a946}\label{classClientError_aad700c61d6fa468442caa4b1f717a946}} 
+string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Имя исключения \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClientError_a79bdc3ff320094e91cefa9da21b58284}\label{classClientError_a79bdc3ff320094e91cefa9da21b58284}} 
+string {\bfseries func}
+\begin{DoxyCompactList}\small\item\em Имя функции, в которой возникла ошибка \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClientError_a4b991bb03eec2545db30414bb2013300}\label{classClientError_a4b991bb03eec2545db30414bb2013300}} 
+string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Сообщение об ошибке \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс исключений для работы с клиентом 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classClientError_a1137908ebb632a77ef5fa996df7a78a2}\label{classClientError_a1137908ebb632a77ef5fa996df7a78a2}} 
+\index{ClientError@{ClientError}!ClientError@{ClientError}}
+\index{ClientError@{ClientError}!ClientError@{ClientError}}
+\doxysubsubsection{\texorpdfstring{ClientError()}{ClientError()}}
+{\footnotesize\ttfamily Client\+Error\+::\+Client\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{error\+Name,  }\item[{const string \&}]{func }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classClientError}{Client\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em error\+Name} & Имя ошибки \\
+\hline
+{\em func} & Имя функции, в которой возникла ошибка \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classClientError_a6e1909a493ef6b13f77a047877f329e9}\label{classClientError_a6e1909a493ef6b13f77a047877f329e9}} 
+\index{ClientError@{ClientError}!getFunc@{getFunc}}
+\index{getFunc@{getFunc}!ClientError@{ClientError}}
+\doxysubsubsection{\texorpdfstring{getFunc()}{getFunc()}}
+{\footnotesize\ttfamily string Client\+Error\+::get\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить имя функции, в которой возникла ошибка 
+
+\begin{DoxyReturn}{Возвращает}
+Имя функции 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClientError_ac451d92271a6d5a206af954fb1361b33}\label{classClientError_ac451d92271a6d5a206af954fb1361b33}} 
+\index{ClientError@{ClientError}!getName@{getName}}
+\index{getName@{getName}!ClientError@{ClientError}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Client\+Error\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить имя ошибки 
+
+\begin{DoxyReturn}{Возвращает}
+Имя ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClientError_afdda53e6bede89fd4d9fa458f2489860}\label{classClientError_afdda53e6bede89fd4d9fa458f2489860}} 
+\index{ClientError@{ClientError}!what@{what}}
+\index{what@{what}!ClientError@{ClientError}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Client\+Error\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Получить сообщение об ошибке 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+error.\+h\item 
+error.\+cpp\end{DoxyCompactItemize}

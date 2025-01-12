@@ -1,0 +1,41 @@
+\hypertarget{cli_8h_source}{}\doxysection{cli.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}error.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classCMDParser}{CMDParser}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{classCMDParser_aaaaef72b6ec12ec60710511d3f72a1bc}{CMDParser}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_abbda8127c92c4e49c986f7359727efdd}{getAddress}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{classCMDParser_a56a9a6b883dcc77cd604da403f0c1863}{getPort}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_af22f6597b7367e3e515c9297ab165e5f}{getInputPath}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_a4bfc10f2dab2fff810156bc23deab39e}{getOutputPath}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_a715e57948d9a4cf58afba43fc6b7d2d7}{getConfigPath}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCMDParser_afc1385930229c1872b36d80c5f6ea95b}{parseArgs}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCMDParser_a419be9a1ec8d5146d1f5331f1b6191d6}{showHelp}}();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{private}:}
+\DoxyCodeLine{72     \textcolor{keywordtype}{string} address = \textcolor{stringliteral}{"{}127.0.0.1"{}};     }
+\DoxyCodeLine{73     uint16\_t port = 33333;      }
+\DoxyCodeLine{74     \textcolor{keywordtype}{string} input\_path = \textcolor{stringliteral}{"{}input.bin"{}};  }
+\DoxyCodeLine{75     \textcolor{keywordtype}{string} output\_path = \textcolor{stringliteral}{"{}output.bin"{}}; }
+\DoxyCodeLine{76     \textcolor{keywordtype}{string} config\_path = \textcolor{stringliteral}{"{}config.txt"{}}; }
+\DoxyCodeLine{77 \};}
+
+\end{DoxyCode}

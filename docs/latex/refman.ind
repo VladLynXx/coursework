@@ -1,0 +1,74 @@
+\begin{theindex}
+
+  \item {auth}
+    \subitem {Client}, \hyperpage{8}
+
+  \indexspace
+
+  \item {calc}
+    \subitem {Client}, \hyperpage{8}
+  \item {Client}, \hyperpage{7}
+    \subitem {auth}, \hyperpage{8}
+    \subitem {calc}, \hyperpage{8}
+    \subitem {Client}, \hyperpage{7}
+    \subitem {conn}, \hyperpage{9}
+    \subitem {getAddress}, \hyperpage{9}
+    \subitem {getPort}, \hyperpage{9}
+  \item {ClientError}, \hyperpage{9}
+  \item {CMDParser}, \hyperpage{10}
+    \subitem {getAddress}, \hyperpage{10}
+    \subitem {getConfigPath}, \hyperpage{10}
+    \subitem {getInputPath}, \hyperpage{11}
+    \subitem {getOutputPath}, \hyperpage{11}
+    \subitem {getPort}, \hyperpage{11}
+    \subitem {parseArgs}, \hyperpage{11}
+  \item {conf}
+    \subitem {Data}, \hyperpage{13}
+  \item {conn}
+    \subitem {Client}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Data}, \hyperpage{12}
+    \subitem {conf}, \hyperpage{13}
+    \subitem {Data}, \hyperpage{12}
+    \subitem {getConfigPath}, \hyperpage{13}
+    \subitem {getInputPath}, \hyperpage{13}
+    \subitem {getOutputPath}, \hyperpage{13}
+    \subitem {read}, \hyperpage{14}
+    \subitem {write}, \hyperpage{14}
+
+  \indexspace
+
+  \item {getAddress}
+    \subitem {Client}, \hyperpage{9}
+    \subitem {CMDParser}, \hyperpage{10}
+  \item {getConfigPath}
+    \subitem {CMDParser}, \hyperpage{10}
+    \subitem {Data}, \hyperpage{13}
+  \item {getInputPath}
+    \subitem {CMDParser}, \hyperpage{11}
+    \subitem {Data}, \hyperpage{13}
+  \item {getOutputPath}
+    \subitem {CMDParser}, \hyperpage{11}
+    \subitem {Data}, \hyperpage{13}
+  \item {getPort}
+    \subitem {Client}, \hyperpage{9}
+    \subitem {CMDParser}, \hyperpage{11}
+
+  \indexspace
+
+  \item {parseArgs}
+    \subitem {CMDParser}, \hyperpage{11}
+
+  \indexspace
+
+  \item {read}
+    \subitem {Data}, \hyperpage{14}
+
+  \indexspace
+
+  \item {write}
+    \subitem {Data}, \hyperpage{14}
+
+\end{theindex}

@@ -1,0 +1,35 @@
+\hypertarget{client_8h_source}{}\doxysection{client.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classClient}{Client}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{classClient_a66adc90d431a7a33a8ab3151d1075c6d}{Client}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&address, uint16\_t port);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a9865ca34bb3892bf267a8e8e4a24781d}{conn}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_ad715ab1466b33f6f2d50bf8a58f3abe4}{auth}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&username, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&password);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{46     vector<float> \mbox{\hyperlink{classClient_a706687d6fd1e7e75eb3b84cfabac1ae9}{calc}}(\textcolor{keyword}{const} vector<vector<float>> \&data);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a2ac4838875e743af25125d8b5c8eba09}{close}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{string} \mbox{\hyperlink{classClient_afdf2c15b5ef6f4069786077717702a3f}{getAddress}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{65     uint16\_t \mbox{\hyperlink{classClient_a75595f6310f4055351e1067fcd5e4aa5}{getPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{keyword}{private}:}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} socket;     }
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} address; }
+\DoxyCodeLine{70     uint16\_t port;  }
+\DoxyCodeLine{71 \};}
+
+\end{DoxyCode}
